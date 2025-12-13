@@ -31,3 +31,16 @@ class DataValidationConfig:
     status_file: str
     unzip_data_dir: Path
     all_schema: dict
+    
+    
+@dataclass
+class DataTransformationConfig:
+    """
+    Configuration for data transformation process.
+    
+    Attributes:
+        root_dir (Path): Path to store transformed data.
+        data_path (Path): Path to the input data file for transformation.
+    """
+    root_dir: Path
+    data_path: Path
